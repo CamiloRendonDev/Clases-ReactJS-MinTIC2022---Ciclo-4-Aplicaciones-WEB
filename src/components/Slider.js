@@ -4,10 +4,18 @@ class Slider extends Component {
     // Metodo render (Se encargara de mostrar la vista al usuario)
     render() {
         return (
-            <div id="slider" className="slider-big">
-                <h1>Bienvenido al Curso de React NRC 53848 - 53849</h1>
-                <a href="#" className="btn-white">Ir al Blog</a>
-            </div>           
+            <div>
+                <div id="slider" className="slider-big">
+                    <h1>Bienvenido al Curso de ReactJS NRC 53848 - 53849</h1>
+                    <h2>Universidad Pontificia Bolivariana - Desarrollo de Aplicaciones WEB</h2>
+                    <a href="index.html" className="btn-white">Ir al Blog</a>
+                </div> 
+                
+                {/*LIMPIAR FLOTADOS*/}
+                <div class="clearfix">
+                            
+                </div>
+            </div>
             )    
     }
 }

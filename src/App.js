@@ -1,4 +1,3 @@
-import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 // Importamos el componente
 import MiComponente from './components/MiComponente';
@@ -25,7 +24,7 @@ function App() {
       
       <Slider/>
 
-      <div className="center">
+     <div className="center">
           
           <section id="content">
 
