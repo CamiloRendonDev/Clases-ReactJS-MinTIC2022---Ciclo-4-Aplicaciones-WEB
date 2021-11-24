@@ -1,8 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/logo.svg';
+import './assets/css/App.css';
 // Importamos el componente
 import MiComponente from './components/MiComponente';
 import Receta from './components/Receta';
+import Header from './components/Header';
+import Slider from './components/Slider';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 function presentacion(grupos, año){
   const presentacion = <div>
@@ -17,15 +21,32 @@ function App() {
   const grupos = 'NRC 53848 - 53849';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {presentacion(grupos, 2021)}    
-        <section>
-          <MiComponente/>
-          <Receta/>
-        </section>   
-      </header>
+      <Header/>
+      
+      <Slider/>
+
+      <div className="center">
+          
+          <section id="content">
+
+            <section className="componentes">
+              {presentacion(grupos, 2021)}    
+              <MiComponente/>
+              <Receta/>
+            </section>  
+          </section>    
+          <Sidebar/>
+
+          {/*LIMPIAR FLOTADOS*/}
+          <div class="clearfix">
+                  
+          </div>
+
+      </div> {/* END DIV CENTER */}
+      <Footer/>
     </div>
+
+
   );
 }
 export default App;

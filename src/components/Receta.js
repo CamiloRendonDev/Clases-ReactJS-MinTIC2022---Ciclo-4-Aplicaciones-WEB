@@ -13,9 +13,10 @@ class Receta extends Component {
                 <div>
                     <h1>{`Receta: ${receta.nombre}`}</h1>
                     <h2>{`Caloria: ${receta.calorias}`}</h2>
-                    <ol>
+                    <ol> {/*Bucle para recorrer el array*/}
                         {
-                            receta.ingredientes.map((ingrediente, i) => {
+                            receta.ingredientes.map((ingrediente, i) => { 
+                                
                                 console.log(ingrediente);
                                 return ( 
                                     <li key={i}>
