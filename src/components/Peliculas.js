@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Pelicula from './Pelicula';
 //Defenimos una clase
 class Peliculas extends Component {
     state = {
@@ -27,22 +28,9 @@ class Peliculas extends Component {
                 <p>Seleccion de peliculas favoritas de {this.state.propietario}</p>
                 {/*Crear el componente de peliclas*/}
                 {
-                    this.state.peliculas.map((peliculas, i) => {
+                    this.state.peliculas.map((pelicula, i) => {
                         return (
-
-                            <article className="article-item" id="article-template">
-                                <div className="image-wrap">
-                                    <img src={peliculas.image} alt={peliculas.titulo} />
-                                </div>
-                                <h2>{peliculas.titulo}</h2>
-                                <span className="date">
-                                    Hace 5 munitos
-                                </span>
-                                <a href="#">Leer mas</a>
-                                {/* LIMPIAR FLOTADOS */}
-                                <div className="clearfix">
-                                </div>
-                            </article>
+                            <Pelicula key={i} pelicula={pelicula} />   
                         )  
                     })
                 };

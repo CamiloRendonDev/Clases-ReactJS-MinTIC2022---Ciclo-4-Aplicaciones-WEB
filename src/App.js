@@ -29,14 +29,14 @@ function App() {
      <div className="center">
           <section id="content">
             <section className="componentes">
-              <h2>Funciones y JSX</h2>
+              {/*<h2>Funciones y JSX</h2>
               {presentacion(grupos, 2021)}    
               <h2>Componentes</h2>
               <MiComponente/>
               <Receta/>
               <h2>Estados (State)</h2>
               <Estado/>
-              {/*<h2>Props </h2>
+              <h2>Props </h2>
               {Props}
               <SliderProps
                     title = "Bienvenido al Curso de ReactJS NRC 53848 - 53849"
