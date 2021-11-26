@@ -33,7 +33,7 @@ class Peliculas extends Component {
                             <Pelicula key={i} pelicula={pelicula} />   
                         )  
                     })
-                };
+                }
             </div>
             )    
     }
