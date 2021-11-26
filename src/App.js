@@ -2,12 +2,12 @@ import './assets/css/App.css';
 // Importamos el componente
 import MiComponente from './components/MiComponente';
 import Receta from './components/Receta';
+import Estado from './components/Estado';
+import SliderProps from './components/SliderProps';
 import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import Estado from './components/Estado';
-import SliderProps from './components/SliderProps';
 import Peliculas from './components/Peliculas';
 
 function presentacion(grupos, año){
